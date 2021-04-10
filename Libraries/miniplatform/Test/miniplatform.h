@@ -1,0 +1,123 @@
+
+void setupMotorShield()
+{
+  pinMode(sdp,OUTPUT);
+  pinMode(wdp,OUTPUT);
+  pinMode(vdp,OUTPUT);
+  pinMode(ndp,OUTPUT);
+  pinMode(fsp,OUTPUT);
+  pinMode(ssp,OUTPUT);
+  pinMode(tsp,OUTPUT);
+  pinMode(esp,OUTPUT);
+  pinMode(SpeedPinFirstMotor,OUTPUT);
+  pinMode(SpeedPinSecondMotor,OUTPUT);
+  pinMode(SpeedPinTridMotor,OUTPUT);
+  pinMode(SpeedPinFourthMotor,OUTPUT);
+}
+void RotatesLeft()
+{
+  digitalWrite(sdp,0);
+  digitalWrite(wdp,1);
+  digitalWrite(ndp,0);
+  digitalWrite(vdp,1);
+  digitalWrite(fsp,1);
+  digitalWrite(ssp,0);
+  digitalWrite(tsp,1);
+  digitalWrite(esp,0);
+  analogWrite(SpeedPinFirstMotor,Speed1);
+  analogWrite(SpeedPinSecondMotor,Speed2);
+  analogWrite(SpeedPinTridMotor,Speed3);
+  analogWrite(SpeedPinFourthMotor,Speed4);
+  
+}
+void RotatesRigt()
+{
+  digitalWrite(sdp,1);
+  digitalWrite(wdp,0);
+  digitalWrite(ndp,1);
+  digitalWrite(vdp,0);
+  digitalWrite(fsp,0);
+  digitalWrite(ssp,1);
+  digitalWrite(tsp,0);
+  digitalWrite(esp,1);
+  analogWrite(SpeedPinFirstMotor,Speed1);
+  analogWrite(SpeedPinSecondMotor,Speed2);
+  analogWrite(SpeedPinTridMotor,Speed3);
+  analogWrite(SpeedPinFourthMotor,Speed4);
+  
+}
+void stopt()
+{
+  digitalWrite(sdp,0);
+  digitalWrite(wdp,0);
+  digitalWrite(ndp,0);
+  digitalWrite(vdp,0);
+  digitalWrite(fsp,0);
+  digitalWrite(ssp,0);
+  digitalWrite(tsp,0);
+  digitalWrite(esp,0);
+  analogWrite(SpeedPinFirstMotor,Speed1);
+  analogWrite(SpeedPinSecondMotor,Speed2);
+  analogWrite(SpeedPinTridMotor,Speed3);
+  analogWrite(SpeedPinFourthMotor,Speed4);
+}
+void goForward()
+{
+  digitalWrite(sdp,1);
+  digitalWrite(wdp,1);
+  digitalWrite(ndp,1);
+  digitalWrite(vdp,1);
+  digitalWrite(fsp,0);
+  digitalWrite(ssp,0);
+  digitalWrite(tsp,0);
+  digitalWrite(esp,0);
+  analogWrite(SpeedPinFirstMotor,Speed1);
+  analogWrite(SpeedPinSecondMotor,Speed2);
+  analogWrite(SpeedPinTridMotor,Speed3);
+  analogWrite(SpeedPinFourthMotor,Speed4);
+}
+void turnLeft()
+{
+  digitalWrite(sdp,1);
+  digitalWrite(wdp,0);
+  digitalWrite(ndp,0);
+  digitalWrite(vdp,1);
+  digitalWrite(fsp,0);
+  digitalWrite(ssp,1);
+  digitalWrite(tsp,1);
+  digitalWrite(esp,0);
+  analogWrite(SpeedPinFirstMotor,Speed1);
+  analogWrite(SpeedPinSecondMotor,Speed2);
+  analogWrite(SpeedPinTridMotor,Speed3);
+  analogWrite(SpeedPinFourthMotor,Speed4);
+}
+void turnRight()
+{
+  digitalWrite(sdp,0);
+  digitalWrite(wdp,1);
+  digitalWrite(ndp,1);
+  digitalWrite(vdp,0);
+  digitalWrite(fsp,1);
+  digitalWrite(ssp,0);
+  digitalWrite(tsp,0);
+  digitalWrite(esp,1);
+  analogWrite(SpeedPinFirstMotor,Speed1);
+  analogWrite(SpeedPinSecondMotor,Speed2);
+  analogWrite(SpeedPinTridMotor,Speed3);
+  analogWrite(SpeedPinFourthMotor,Speed4);
+}
+void back()
+{
+  digitalWrite(sdp,0);
+  digitalWrite(wdp,0);
+  digitalWrite(ndp,0);
+  digitalWrite(vdp,0);
+  digitalWrite(fsp,1);
+  digitalWrite(ssp,1);
+  digitalWrite(tsp,1);
+  digitalWrite(esp,1);
+  analogWrite(SpeedPinFirstMotor,Speed1);
+  analogWrite(SpeedPinSecondMotor,Speed2);
+  analogWrite(SpeedPinTridMotor,Speed3);
+  analogWrite(SpeedPinFourthMotor,Speed4);
+}
