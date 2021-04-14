@@ -20,6 +20,9 @@ int Speed2 =0;
 int Speed3 =0;
 int Speed4 =0;
 #include "miniplatform.h"
+
+#define s(x) x<=100?0:map(x, 100, 255, 0, 100)
+
 void setup() {
   // put your setup code here, to run once:
 
@@ -28,6 +31,6 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  goForward();
+  goForward(s(100), s(50), s(100), s(50));
 
 }
