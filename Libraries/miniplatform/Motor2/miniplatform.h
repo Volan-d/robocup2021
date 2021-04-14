@@ -74,7 +74,7 @@ void Stop()
   digitalWrite(FourPin2,0);
   analogWrite(SpeedPinFourthMotor,0);
 }
-void goForward()
+void goForward(int _speed1 = 255, int _speed2 = 255, int _speed3 = 255, int _speed4 = 255)
 {
   digitalWrite(SecondPin1,1);
   digitalWrite(SecondPin2,0);
