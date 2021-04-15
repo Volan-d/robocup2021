@@ -17,7 +17,7 @@ void setupMotorShield()
   pinMode(FourPin2,OUTPUT);
   pinMode(SpeedPinFourthMotor,OUTPUT);
 }
-void RotatesLeft()
+void RotatesLeft(int _speed1 = 255, int _speed2 = 255, int _speed3 = 255, int _speed4 = 255)
 {
   digitalWrite(SecondPin1,0);
   digitalWrite(SecondPin2,1);
@@ -36,7 +36,7 @@ void RotatesLeft()
   analogWrite(SpeedPinFourthMotor,Speed4);
 
 }
-void RotatesRigt()
+void RotatesRigt(int _speed1 = 255, int _speed2 = 255, int _speed3 = 255, int _speed4 = 255)
 {
   digitalWrite(SecondPin1,1);
   digitalWrite(SecondPin2,0);
@@ -93,7 +93,7 @@ void goForward(int _speed1 = 255, int _speed2 = 255, int _speed3 = 255, int _spe
   digitalWrite(FourPin2,0);
   analogWrite(SpeedPinFourthMotor,Speed4);
 }
-void turnLeft()
+void turnLeft(int _speed1 = 255, int _speed2 = 255, int _speed3 = 255, int _speed4 = 255)
 {
   digitalWrite(SecondPin1,1);
   digitalWrite(SecondPin2,0);
@@ -111,7 +111,7 @@ void turnLeft()
   digitalWrite(FourPin1,0);
   analogWrite(SpeedPinFourthMotor,Speed4);
 }
-void turnRight()
+void turnRight(int _speed1 = 255, int _speed2 = 255, int _speed3 = 255, int _speed4 = 255)
 {
   digitalWrite(SecondPin1,0);
   digitalWrite(SecondPin2,1);
@@ -129,7 +129,7 @@ void turnRight()
   digitalWrite(FourPin2,1);
   analogWrite(SpeedPinFourthMotor,Speed4);
 }
-void back()
+void back(int _speed1 = 255, int _speed2 = 255, int _speed3 = 255, int _speed4 = 255)
 {
   digitalWrite(SecondPin1,0);
   digitalWrite(SecondPin2,1);
