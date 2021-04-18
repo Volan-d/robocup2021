@@ -13,3 +13,8 @@
 #define FourPin1 4
 #define FourPin2 8
 #define SpeedPinFourthMotor 12
+
+#define CS_PIN 12
+#define CLOCK_PIN 9
+#define MOSI_PIN 11
+#define MISO_PIN 10
